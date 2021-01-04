@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  artemis:
+    container_name: artemis
+    image: vromero/activemq-artemis:2.15.0
+    network_mode: "host"
+    environment: 
+      ARTEMIS_USERNAME: admin
+      ARTEMIS_PASSWORD: admin
